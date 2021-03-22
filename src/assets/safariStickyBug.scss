@@ -1,0 +1,34 @@
+$size: 250;
+$border: #aaa;
+
+.ssb-head {
+  flex: 1 0 auto;
+  background: linear-gradient(90deg, transparent 0 ($size * 1px - 1px), $border ($size * 1px - 1px) ($size * 1px));
+  background-size: $size * 1px;
+  border-bottom: 1px solid $border;
+}
+
+.ssb-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ssb-side-header {
+  flex: 1 0 auto;
+  border-bottom: 1px solid $border;
+  border-right: 1px solid $border;
+  width: 100%;
+}
+
+.ssb-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.ssb-row {
+  flex: 1 0 auto;
+  background: linear-gradient(90deg, transparent 0 ($size * 1px - 1px), $border ($size * 1px - 1px) ($size * 1px));
+  background-size: $size * 1px;
+  border-bottom: 1px solid $border;
+}

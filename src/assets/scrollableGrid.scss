@@ -1,0 +1,57 @@
+$clouds: #e4e7e8;
+
+.sis-grid-css {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  &__stub-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: $clouds;
+  }
+  &__scroll {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+  }
+  &__head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: $clouds;
+    display: flex;
+  }
+  &__side {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: $clouds;
+    display: flex;
+  }
+  &__side-resize {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -5px;
+    width: 20px;
+    z-index: 3;
+    cursor: col-resize;
+    user-select: none;
+  }
+  &__body {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+}
